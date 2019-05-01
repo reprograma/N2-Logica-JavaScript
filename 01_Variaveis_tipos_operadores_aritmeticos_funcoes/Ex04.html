@@ -1,0 +1,23 @@
+<!-- Elabore um programa que receba duas notas de 
+    um aluno e calcule a média -->
+ <meta charset="UTF-8">
+<script>
+
+var nota1 = parseFloat(prompt('Digite a nota 1'))
+var nota2 = parseFloat(prompt('Digite a nota 2'))
+var media = (n1 + n2) /2;
+console.log('A média da aluna é ',media);
+
+//Outra forma de fazer usando uma função com as notas como parâmetros:
+function mediaAluna(n1,n2){ 
+    var media = (n1 + n2) /2;
+    return media; //Precisamos usar o return para recuperar o valor fora da função
+}
+    
+//Para chamar a função criada basta fazer:
+mediaAluna(5,7)
+
+//Uma forma de exibir uma mensagem com a nota é:
+console.log('A nota da aluna Fulana é', mediaAluna(7,8));
+
+</script>
